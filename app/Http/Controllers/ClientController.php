@@ -1,31 +1,3 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@marcioabraz 
-Esther-pessoal
-/
-laravel-eloquent
-Public
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-laravel-eloquent/app/Http/Controllers/ClientController.php /
-@esther-luizalabs
-esther-luizalabs find client
-Latest commit 67d6bf4 11 minutes ago
- History
- 1 contributor
-92 lines (83 sloc)  2.01 KB
-   
 <?php
 
 namespace App\Http\Controllers;
