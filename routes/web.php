@@ -44,6 +44,6 @@ Route::get('/clients/search/{text}', [
 ]);
 
 Route::get('/clients/bills/{client}',[
-BillController::class, 
-'conta'
+    BillController::class, 
+    'conta'
 ]);
