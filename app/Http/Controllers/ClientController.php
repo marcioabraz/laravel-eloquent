@@ -89,4 +89,9 @@ class ClientController extends Controller
     {
         //
     }
+    public function name($name)
+    {
+        //return Client::where('name','=', '$name')->first();
+        return response()->json(Client::where('name','=', $name)->first());
+    }
 }
