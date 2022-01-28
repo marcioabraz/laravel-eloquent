@@ -94,7 +94,8 @@ class BillController extends Controller
     }
     public function valoresentre($valor1,$valor2)
     {
-        return response()->json(Bill::whereBetween('value',[$valor1, $valor2])->get());
+         return response()->json(Bill::where('value','>=',$valor1)->where('value','<=', $valor2)->get());
+        // return response()->json(Bill::whereBetween('value',[$valor1, $valor2])->get());
     }
 
     
