@@ -101,10 +101,10 @@ class ClientController extends Controller
         return response()->json(Client::where('name','like', '%'.$text.'%' )->get());
     }
 
-    public function order($name)
+    public function order()
     {
         //return Client::where('name','=', '$name')->first();
-        return response()->json(Client::orderBy('name')->limit(2)->get());
+        return response()->json(Client::orderBy('name','asc')->limit(2)->get());
     }
 
 }
