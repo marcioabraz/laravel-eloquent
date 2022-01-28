@@ -27,3 +27,8 @@ Route::post('/clients/store', [
     ClientController::class, 
     'store'
 ]);
+
+Route::post('/clients/show{client}', [
+    ClientController::class, 
+    'show'
+]);
