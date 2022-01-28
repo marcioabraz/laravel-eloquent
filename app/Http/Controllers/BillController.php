@@ -84,9 +84,8 @@ class BillController extends Controller
         //
     }
 
-    public function conta($client)
+    public function bills($client)
     {
-        //return Client::where('name','=', '$name')->first();
-        return response()->json(Bill::where('client_id','=', $client )->get());
+        return response()->json(Bill::where('client_id','=', $client)->get());
     }
 }

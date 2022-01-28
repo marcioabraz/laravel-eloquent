@@ -1,7 +1,8 @@
 <?php
 
-use App\Http\Controllers\ClientController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BillController;
+use App\Http\Controllers\ClientController;
 
 /*
 |--------------------------------------------------------------------------
@@ -45,5 +46,5 @@ Route::get('/clients/search/{text}', [
 
 Route::get('/clients/bills/{client}',[
     BillController::class, 
-    'conta'
+    'bills'
 ]);
