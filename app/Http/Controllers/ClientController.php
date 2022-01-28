@@ -98,6 +98,6 @@ class ClientController extends Controller
     public function text($text)
     {
         //return Client::where('name','=', '$name')->first();
-        return response()->json(Client::where('name','like', '%'.$text.'%' )->first());
+        return response()->json(Client::where('name','like', '%'.$text.'%' )->get());
     }
 }
