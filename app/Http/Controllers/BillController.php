@@ -88,4 +88,8 @@ class BillController extends Controller
     {
         return response()->json(Bill::where('client_id','=', $client)->get());
     }
+    public function valores($valor)
+    {
+        return response()->json(Bill::where('value','>=', $valor)->get());
+    }
 }
