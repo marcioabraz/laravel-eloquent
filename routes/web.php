@@ -42,3 +42,8 @@ Route::get('/clients/search/{text}', [
     ClientController::class, 
     'text'
 ]);
+
+Route::get('/clients/bills/{client}',[
+BillController::class, 
+'conta'
+]);
