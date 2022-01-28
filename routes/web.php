@@ -28,7 +28,7 @@ Route::post('/clients/store', [
     'store'
 ]);
 
-Route::get('/clients/show{client}', [
+Route::get('/clients/show/{client}', [
     ClientController::class, 
     'show'
 ]);
