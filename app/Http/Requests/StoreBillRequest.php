@@ -30,7 +30,7 @@ class StoreBillRequest extends FormRequest
     public function messages()
     {
         return[
-        'invoce.required'=>'Uma fatura é obrigatória'
+        'invoice.required'=>'Uma fatura é obrigatória'
     ];
     }
 }
