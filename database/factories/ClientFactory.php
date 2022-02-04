@@ -14,7 +14,11 @@ class ClientFactory extends Factory
     public function definition()
     {
         return [
-            //
+
+            'name' =>$this->faker->sentence(5),
+            'email'  =>$this->faker->email(),
+            'phone'  =>$this->faker->phoneNumber(),
+            'id_number' =>$this->faker->uuid,
         ];
     }
 }
