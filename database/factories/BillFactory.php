@@ -14,7 +14,7 @@ class BillFactory extends Factory
     public function definition()
     {
         return [
-            'invoice'=> $this->faker->randomNumber(),
+            'invoice'=> $this->faker->randomNumber(4,true),
             'installment'=>$this->faker->randomDigit(),
             'value'=>$this->faker->randomNumber(),
             'client_id'=>$this->faker->uuid,
